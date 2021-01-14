@@ -1,37 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --default-theme-color: #00134c;
+}
+.img-width img{
+    width:100%;
+}
 body{
-    font-family: 'Yusei Magic', sans-serif;
+    color: var(--default-theme-color,#00135c);
+    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    /* font-family: 'Oswald', sans-serif; */
+}
+.bg-purple {
+   
+    background-color: #FFFBF1;
+}
+
+.btn-success-light {
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-radius: 10px;
+    color: #fff;
+    /* background-color: #98B133; */
+    background: linear-gradient(#98B133,#89B133);
+    border-color: #98B133;
+}
+.font-size-lg{
+    font-family: 'Oswald', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.font-size-sm {
+    font-size: 90%;
+}
+.font-emphasized {
+    font-family: 'Oswald', sans-serif;
+}
+
+
+
+/* larger than laptop s */
+@media (min-width:1200px){
+    .btn-success-light {
+        background: linear-gradient(#98B133,#89B133);
+    }
+}
+/* laptop  */
+@media (max-width:992px){
+    .btn-success-light {
+        background: linear-gradient(#98B133,#89B133);
+    }
+}
+
+/* tablet  */
+@media (max-width:768px){
+    .btn-success-light {
+        background: linear-gradient(#98B133,#89B133);
+    }
+}
+/* smartphone  */
+@media (max-width:576px){
+    .btn-success-light {
+        background: linear-gradient(#98B133,#89B133);
+    }
+}
+/* button phone  */
+@media (max-width:480px){
+    .btn-success-light {
+        background: linear-gradient(#98B133,#89B133);
+    }
+}
+
+footer{
+    text-align: center;
+    font-weight: 700;
+    display:block;
+}
+footer a{
+    text-decoration: none;
 
 }
-.penguin-color{
-    color: #FABE4C;
-}
-.btn-color{
-    background-color: #A4BC46;
-    border-radius: 5px;
-    
-    color:white;
-    width:auto;
-    height:auto;
-}
-.size{
-    font-size:70px;
-}
-.img-bg-color{
-    background-color: #F1F1F1;
-    border-radius: 30px;
-    
-}
-.border-radius{
-    border-radius:30px;
-    border:0;
-}
-.img-size{
-    width: 293px;
-    height: 293px;
-    margin-top: 40px;
-    margin-left: 50px;
-}
-.bg-footer{
-    border:0;
-    background-color: white;
-}
+
+

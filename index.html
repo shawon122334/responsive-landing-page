@@ -2,176 +2,247 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
-    <title>Responsive Landing Page</title>
-    <!-- linked to the css file  -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- line 10 and 11 are for text fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com"> 
-    <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Landing Page by Bootstrap 5</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/fontAwesome5.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet" />
 </head>
 
 <body>
-    <header class="container">
-        <!-- this is our navar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light >
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img style="width:80%;" src="image/Logo, Icon/Group 33072.png" alt="">
+    <header class="container-fluid bg-purple">
+        <!-- navbar  -->
+        <nav class="navbar navbar-expand-lg navbar-light  bg-covers">
+            <div class="container">
+                <a class="navbar-brand img-width" href="#">
+                    <img src="image/Logo, Icon/penguin.png" alt="">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-togggler"
+                    aria-controls="navbar-togggler" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
-                    <div class="navbar-nav ">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        <a class="nav-link" href="#">Products</a>
-                        <a class="nav-link" href="#">About Us</a>
-                        <a class="nav-link" href="#">Contact Us</a>
-
-                    </div>
+                <div class="collapse navbar-collapse" id="navbar-togggler">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item p-2"> <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item p-2"> <a class="nav-link" href="#products">Product</a> </li>
+                        <li class="nav-item p-2"> <a class="nav-link" href="#introduction">About us</a> </li>
+                        <li class="nav-item p-2"> <a class="nav-link" href="#introduction">Contact us</a> </li>
+                    </ul>
                 </div>
             </div>
         </nav>
-        <div class="row d-flex  align-items-center p-3">
-            <div class="col-md-6 ">
-                <!-- added color using css -->
-                <h1 class="penguin-color size"> <b>BE THE PENGUINS</b> </h1>
-                <h1 class="size"><b>OF WINTER</b></h1>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                <button class="btn-color"> Buy Now</button>
-                
+        <div class="container" id="home">
+            <div class="row d-flex">
+                <div class="col-md-6 py-5 align-self-center">
+                    <h1 class="text-capitalize">
+                        <span class="text-warning font-size-lg">BE THE PENGUINS</span> </br>
+                        <span class="font-size-lg"> OF WINTER </span>
+                    </h1>
+                    <p class="font-size-sm">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat velit in quas soluta tempore
+                        recusandae
+                        amet ?
+                    </p>
+                    <button class="btn btn-success-light px-3 py-2">
+                        <i class="fa fa-shopping-cart m-1"></i>
+                        Buy Now</button>
+                </div>
+                <div class="col-md-6  justify-content-center">
+                    <img src="image/me.png" class="img-fluid w-75" alt="">
+                </div>
             </div>
-            <div class="col-md-6">
-                <img src="image/green.png" class="d-block w-100" alt="...">
+        </div>
+    </header>
+
+    <section class="mt-5">
+        <div class="container">
+            <h1 class="font-size-lg">Woman Jacket </h1>
+            <div class="row  my-5">
+                <div class="col-sm-12 col-md-4 mb-4">
+                    <div class="card h-100  px-3 py-2 shadow  border-top-0" style="border-radius: 25px;">
+                        <img src="image/women blazer.png" class="card-img-top bg-light p-4 h-75" alt="..."
+                            style="border-radius: 25px;" />
+                        <div class="card-body m-0">
+                            <h5 class="card-title">
+                                <streong> Yellow Coat Jacket </strong>
+                            </h5>
+                            <p class="card-text"> Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry </p>
+                        </div>
+                        <div
+                            class="card-footer bg-transparent border-0 d-flex justify-content-between align-items-center">
+                            <p class="font-size-lg text-warning">$234</p>
+                            <button class="btn btn-success-light"> <i class="fa fa-shopping-cart m-1"></i> Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-4  mb-4">
+                    <div class="card h-100  px-3 py-2 shadow" style="border-radius: 25px;">
+                        <img src="image/women jacket.png" class="card-img-top bg-light p-4 h-75" alt="..."
+                            style="border-radius: 25px;" />
+                        <div class="card-body m-0">
+                            <h5 class="card-title"> <strong> Ladies Jacket </strong> </h5>
+                            <p class="card-text"> Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry </p>
+                        </div>
+                        <div
+                            class="card-footer bg-transparent border-0 d-flex justify-content-between align-items-center">
+                            <p class="font-size-lg text-warning">$234</p>
+                            <button class="btn btn-success-light"> <i class="fa fa-shopping-cart m-1"></i> Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-4  mb-4">
+                    <div class="card h-100  px-3 py-2 shadow" style="border-radius: 25px;">
+                        <img src="image/women overcoat.png" class="card-img-top bg-light p-4 h-75" alt="..."
+                            style="border-radius: 25px;" />
+                        <div class="card-body m-0">
+                            <h5 class="card-title"> <strong> Woman Leather Jacket </strong> </h5>
+                            <p class="card-text"> Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry </p>
+                        </div>
+                        <div
+                            class="card-footer bg-transparent border-0 d-flex justify-content-between align-items-center">
+                            <p class="font-size-lg text-warning">$234</p>
+                            <button class="btn btn-success-light"> <i class="fa fa-shopping-cart m-1"></i> Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="mt-5" id="products">
+        <div class="container">
+            <h1 class="font-size-lg"> Man Jacket </h1>
+            <div class="row  my-5">
+                <div class="col-sm-12 col-md-4 mb-4">
+                    <div class="card h-100  px-3 py-2 shadow" style="border-radius: 25px;">
+                        <img src="image/man blazer.png" class="card-img-top bg-light p-4 h-75" alt="..."
+                            style="border-radius: 25px;" />
+                        <div class="card-body m-0">
+                            <h5 class="card-title"> <strong> Snowboard Jacket Mens </strong> </h5>
+                            <p class="card-text"> Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry </p>
+                        </div>
+                        <div
+                            class="card-footer bg-transparent border-0 d-flex justify-content-between align-items-center">
+                            <p class="font-size-lg text-warning">$234</p>
+                            <button class="btn btn-success-light"> <i class="fa fa-shopping-cart m-1"></i> Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-4  mb-4">
+                    <div class="card h-100  px-3 py-2 shadow" style="border-radius: 25px;">
+                        <img src="image/man jacket.png" class="card-img-top bg-light p-4 h-75" alt="..."
+                            style="border-radius: 25px;" />
+                        <div class="card-body m-0">
+                            <h5 class="card-title"> <strong> Man Leather Jackets </strong> </h5>
+                            <p class="card-text"> Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry </p>
+                        </div>
+                        <div
+                            class="card-footer bg-transparent border-0 d-flex justify-content-between align-items-center">
+                            <p class="font-size-lg text-warning">$234</p>
+                            <button class="btn btn-success-light"> <i class="fa fa-shopping-cart m-1"></i> Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-4  mb-4">
+                    <div class="card h-100  px-3 py-2 shadow" style="border-radius: 25px;">
+                        <img src="image/men hoodie.png" class="card-img-top bg-light p-4 h-75" alt="..."
+                            style="border-radius: 25px;" />
+                        <div class="card-body m-0">
+                            <h5 class="card-title"> <strong> Man Casual Jackets </strong> </h5>
+                            <p class="card-text"> Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry </p>
+                        </div>
+                        <div
+                            class="card-footer bg-transparent border-0 d-flex justify-content-between align-items-center">
+                            <p class="font-size-lg text-warning">$234</p>
+                            <button class="btn btn-success-light"> <i class="fa fa-shopping-cart m-1"></i> Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="introduction">
+        <div class="container">
+            <div class="row d-flex flex-md-row-reverse my-5">
+                <div class="col-md-12 col-lg-7">
+                    <img src="image/Logo, Icon/crew.png" alt="" class="img-fluid" />
+                </div>
+                <div class="col-md-12 col-lg-5">
+                    <div class="d-md-block mt-4">
+                        <article class="d-md-grid d-lg-flex align-items-center text-center text-md-start p-3 shadow"
+                            style="border-radius: 15px">
+                            <img src="image/Logo, Icon/img1.png" alt="" class="img-fluid w-25 mx-auto" />
+                            <div class="p-2">
+                                <h5><strong>Find the Perfect Fit</strong></h5>
+                                <p>
+                                    Everybody is different, which is why we offer styles for every
+                                    body .
+                                </p>
+                            </div>
+                        </article>
+                        <article class="d-md-grid d-lg-flex align-items-center p-3 shadow text-center text-md-start"
+                            style="border-radius: 15px">
+                            <img src="image/Logo, Icon/img2.png" alt="" class="img-fluid w-25 mx-auto" />
+                            <div class="p-2">
+                                <h5><strong>Free Exchanges</strong></h5>
+                                <p>One of the many reasons you can shop with peace of mind.</p>
+                            </div>
+                        </article>
+                        <article class="d-md-grid d-lg-flex align-items-center p-3 shadow text-center text-md-start"
+                            style="border-radius: 15px">
+                            <img src="image/Logo, Icon/img3.png" alt="" class="img-fluid w-25 mx-auto" />
+                            <div class="p-2">
+                                <h5><strong> Contact Our Seller</strong></h5>
+                                <p>
+                                    They are here to help you. That's quite literally what we pay
+                                    them for.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- row  -->
+                </div>
             </div>
         </div>
 
-    </header>
-    <main class="container">
-        <!-- this is women seciton -->
-        <section id="women-jacket" class="mt-5">
-            <h1>WOMAN JACKET</h1>
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col ">
-                  <div class="card h-100 border-radius">
-                      <div class="img-bg-color">
-                        <img src="image/PngItem_2597366 1.png" class="card-img-top img-size rounded" alt="...">
-                      </div>
-                    
-                    <div class="card-body">
-                      <h5 class="card-title">Yellow Coat Jacket</h5>
-                      <p class="card-text">TLorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    </div>
-                    <div class="card-footer bg-footer d-flex justify-content-between">
-                       <h2 class="penguin-color"><b>$500</b></h2> 
-                       <button class="btn-color "> Buy Now </button>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 border-radius ">
-                        <div class="img-bg-color">
-                          <img src="image/SeekPng 1.png" class="card-img-top img-size" alt="...">
-                        </div>
-                      
-                      <div class="card-body">
-                        <h5 class="card-title">Ladies Jacket</h5>
-                        <p class="card-text">TLorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                      </div>
-                      <div class="card-footer bg-footer d-flex justify-content-between">
-                         <h2 class="penguin-color"><b>$234</b></h2> 
-                         <button class="btn-color "> Buy Now </button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="card h-100 border-radius ">
-                        <div class="img-bg-color ">
-                          <img src="image/PngItem_2597366 1.png" class="card-img-top img-size" alt="...">
-                        </div>
-                      
-                      <div class="card-body">
-                        <h5 class="card-title">Woman Leather Jacket </h5>
-                        <p class="card-text">TLorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                      </div>
-                      <div class="card-footer bg-footer d-flex justify-content-between">
-                         <h2 class="penguin-color"><b>$360</b></h2> 
-                         <button class="btn-color "> Buy Now </button>
-                      </div>
-                    </div>
-                  </div>
-                
-                
-              </div>
-        </section>
-        <!-- this is man section -->
-        <section id="man-jacket" class="mt-5">
-            <h1>MAN JACKET</h1>
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col ">
-                  <div class="card h-100 border-radius">
-                      <div class="img-bg-color">
-                        <img src="image/image 11.png" class="card-img-top img-size rounded" alt="...">
-                      </div>
-                    
-                    <div class="card-body">
-                      <h5 class="card-title">Snowboard Jacket Mens</h5>
-                      <p class="card-text">TLorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    </div>
-                    <div class="card-footer bg-footer d-flex justify-content-between">
-                       <h2 class="penguin-color"><b>$234</b></h2> 
-                       <button class="btn-color "> Buy Now </button>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 border-radius ">
-                        <div class="img-bg-color">
-                          <img src="image/vippng 1.png" class="card-img-top img-size" alt="...">
-                        </div>
-                      
-                      <div class="card-body">
-                        <h5 class="card-title">Man Leather Jackets</h5>
-                        <p class="card-text">TLorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                      </div>
-                      <div class="card-footer bg-footer d-flex justify-content-between">
-                         <h2 class="penguin-color"><b>$250</b></h2> 
-                         <button class="btn-color "> Buy Now </button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="card h-100 border-radius ">
-                        <div class="img-bg-color ">
-                          <img src="image/toppng 1.png" class="card-img-top img-size" alt="...">
-                        </div>
-                      
-                      <div class="card-body">
-                        <h5 class="card-title">Man Casual Jackets </h5>
-                        <p class="card-text">TLorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                      </div>
-                      <div class="card-footer bg-footer d-flex justify-content-between">
-                         <h2 class="penguin-color"><b>$740</b></h2> 
-                         <button class="btn-color "> Buy Now </button>
-                      </div>
-                    </div>
-                  </div>
-                
-                
-              </div>
-        </section>
-
-    </main>
+    </section>
     <footer>
+        <p> <b>STAY CONNECTED</b></p>
+        <p><a href="mailto:shawon.mu11@gmail.com">Send Us Mail</a></p>
+        <a target="_blank" href="https://www.instagram.com/shawon_mu/"><img src="image/insta.png" alt=""
+                style="width:42px;height:42px;"></a>
+        <a target="_blank" href="https://www.facebook.com/shawon1896/"><img src="image/fb1.png" alt=""
+                style="width:42px;height:42px;"></a>
+        <a target="_blank"
+            href="https://api.whatsapp.com/send?phone=8801760910223&amp;text=Hi sabbir! I came from your website:"><img
+                src="image/whatsapp.png" alt="" style="width:42px;height:42px;"></a>
+        <p>©️Sabbir 2021.All right reserved</p>
 
     </footer>
-    <!-- linked to the js file  -->
+
+
+
     <script src="js/bootstrap.min.js"></script>
 </body>
 
